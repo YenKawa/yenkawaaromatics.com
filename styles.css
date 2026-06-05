@@ -66,12 +66,12 @@ a {
 }
 
 .brand {
-  gap: 8px;
+  gap: 3px;
   color: var(--white);
 }
 
 .brand-logo {
-  width: clamp(126px, 11.8vw, 190px);
+  width: clamp(150px, 13.8vw, 230px);
   height: auto;
   flex: 0 0 auto;
 }
@@ -544,11 +544,11 @@ h3 {
 
 @media (max-width: 560px) {
   .brand {
-    gap: 6px;
+    gap: 3px;
   }
 
   .brand-logo {
-    width: 88px;
+    width: 96px;
   }
 
   .brand-wordmark-top {

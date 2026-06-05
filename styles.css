@@ -66,21 +66,38 @@ a {
 }
 
 .brand {
-  gap: 12px;
-  font-size: 0.93rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  gap: 16px;
+  color: var(--white);
 }
 
-.brand-mark {
+.brand-logo {
+  width: clamp(74px, 8.5vw, 126px);
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.brand-wordmark {
   display: grid;
-  width: 38px;
-  height: 38px;
-  place-items: center;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  font-size: 0.76rem;
+  align-content: center;
+  color: var(--white);
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 0.9;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brand-wordmark-top {
+  display: block;
+  font-size: clamp(26px, 3.1vw, 42.67px);
+  font-weight: 700;
+}
+
+.brand-wordmark-bottom {
+  display: block;
+  margin-left: clamp(38px, 4.5vw, 62px);
+  font-size: clamp(21px, 2.55vw, 34.67px);
+  font-weight: 400;
 }
 
 .site-nav {
@@ -118,7 +135,7 @@ a {
   display: none;
 }
 
-.hero {
+  .hero {
   position: relative;
   display: grid;
   min-height: 92vh;
@@ -526,10 +543,22 @@ h3 {
 }
 
 @media (max-width: 560px) {
-  .brand span:last-child {
-    max-width: 150px;
+  .brand {
+    gap: 10px;
   }
 
+  .brand-logo {
+    width: 56px;
+  }
+
+  .brand-wordmark-top {
+    font-size: 20px;
+  }
+
+  .brand-wordmark-bottom {
+    margin-left: 29px;
+    font-size: 16px;
+  }
   .hero {
     min-height: 88vh;
   }
